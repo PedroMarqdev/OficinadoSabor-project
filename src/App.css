@@ -54,6 +54,7 @@
 }
 .choices-header {
   animation-name: fade;
+  animation-delay: 300ms;
   animation-duration: 1s;
   display: flex;
   flex-direction: column;
