@@ -55,9 +55,6 @@
 .choices-header {
   animation-name: fade;
   animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,9 +76,6 @@
 .choices-box {
   animation-name: fade;
   animation-duration: 2s;
-  animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,9 +101,6 @@
 .header-container {
   animation-name: fade;
   animation-duration: 0.5s;
-  animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
   display: flex;
   width: 100vw;
   flex-direction: column;
@@ -124,9 +115,6 @@
 .search-container {
   animation-name: fade;
   animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
   display: flex;
   width: 80vw;
   flex-direction: column;
