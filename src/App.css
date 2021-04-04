@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #a9f5e9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.choices-select {
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.column {
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-title {
+  animation-name: pulse;
+  animation-duration: 2.5s;
+  font-family: "Zilla Slab Highlight", cursive;
+  font-size: 10vw;
+  color: white;
+}
+.choices-header {
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(.72,.21,.08,.57);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.choices-header h1:nth-child(1) {
   color: white;
+  font-size: 10vw;
+  margin: 10px;
+}
+.choices-header h1:nth-child(2) {
+  font-size: 10vw;
+  text-align: center;
+  margin: 10px;
+}
+.choices-header :nth-child(3) {
+  font-size: 5vw;
+  font-weight: lighter;
+}
+.choices-box {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.72,.21,.08,.57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "Zilla Slab Highlight", cursive;
+  background-color: white;
+  border-radius: 5%;
+  width: 35vw;
+  height: 25vh;
+  margin: 2rem 1rem 0 1rem;
+  box-shadow: 1rem 0.5rem 2rem #5555;
+  transition: all 0.4s;
+}
+.choices-box h1:nth-child(1) {
+  font-size: 8vw;
+  white-space: pre-line;
+}
+.choices-box:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+  box-shadow: 1rem 0.5rem 0.5rem #5555;
+}
+.header-container {
+  white-space: pre-line
 }
 
-.App-link {
-  color: #61dafb;
+.header-container h1:nth-child(1) {
+  font-family: "Zilla Slab Highlight", cursive;
+  font-size: 3vw;
+  margin: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes pulse {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0%;
+  }
+    100% {
+      opacity: 100%;
+    }
+  }
+@media (min-width: 700px) {
+  .hero-title {
+    font-size: 5vw;
+  }
+  .choices-header h1:nth-child(1) {
+    color: white;
+    font-size: 5vw;
+    margin: 10px;
+  }
+  .choices-header h1:nth-child(2) {
+    font-size: 4vw;
+    margin: 10px;
+  }
+  .choices-header :nth-child(3) {
+    font-size: 1.5vw;
+    font-weight: lighter;
+  }
+  .choices-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: "Zilla Slab Highlight", cursive;
+    background-color: white;
+    border-radius: 5%;
+    width: 25vw;
+    height: 40vh;
+    margin: 5rem;
+    transition: all 0.4s;
+  }
+  .choices-box h1:nth-child(1) {
+    font-size: 5vw;
+    white-space: pre-line;
   }
 }
