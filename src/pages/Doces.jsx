@@ -1,10 +1,14 @@
 import React from 'react';
-import Header from '../components/Header';
+import HeaderName from '../components/HeaderName';
+import SearchBar from '../components/SearchBar';
 
 function Doces() {
   return (
-    <div>
-      <Header name={'Oficina \nde \ndoces'} />
+    <div className="main-container">
+      <header className="header-container">
+        <HeaderName name={'Oficina \nde \ndoces'} />
+        <SearchBar type="doces" />
+      </header>
     </div>
   );
 }

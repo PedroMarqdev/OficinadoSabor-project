@@ -1,9 +1,16 @@
 import React from 'react';
+import HeaderName from '../components/HeaderName';
+import SearchBar from '../components/SearchBar';
 
-function DaCasa() {
+function Doces() {
   return (
-    <h1>Bem vindos a página de daCasa</h1>
+    <div>
+      <header className="header-container">
+        <HeaderName name={'Oficina \nda \ncasa'} />
+        <SearchBar type="daCasa" />
+      </header>
+    </div>
   );
 }
 
-export default DaCasa;
+export default Doces;

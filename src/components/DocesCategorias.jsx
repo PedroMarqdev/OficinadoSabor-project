@@ -1,14 +1,14 @@
 import React from 'react';
 
-function DaCasaCategorias() {
+function DocesCategorias() {
   return (
-    <div>
-      <button type="button">Ovos</button>
-      <button type="button">Kits</button>
-      <button type="button">Brigadeiros</button>
-      <button type="button">Bolos</button>
+    <div className="categories">
+      <button className="categories-button" type="button">Ovos</button>
+      <button className="categories-button" type="button">Kits</button>
+      <button className="categories-button" type="button">Brigadeiros</button>
+      <button className="categories-button" type="button">Bolos</button>
     </div>
   );
 }
 
-export default DaCasaCategorias;
+export default DocesCategorias;
