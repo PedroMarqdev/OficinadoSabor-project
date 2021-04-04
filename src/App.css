@@ -79,6 +79,9 @@
   box-shadow: 1rem 0.5rem 0.5rem #5555;
 }
 .header-container {
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.72, 0.21, 0.08, 0.57);
   display: flex;
   width: 100vw;
   flex-direction: column;
@@ -91,6 +94,9 @@
   margin: 2rem;
 }
 .search-container {
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.72, 0.21, 0.08, 0.57);
   display: flex;
   width: 80vw;
   flex-direction: column;
